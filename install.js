@@ -11,6 +11,8 @@ module.exports = {
       "message": [
         "{{(gpu === 'nvidia' ? self.cmds.nvidia : ((gpu === 'amd' && platform === 'linux') ? self.cmds.amd : self.cmds.default))}}",
         "pip install -r requirements.txt",
+        "git lfs install",
+        "git clone https://huggingface.co/vikhyatk/moondream1"
       ]
     }
   }, {

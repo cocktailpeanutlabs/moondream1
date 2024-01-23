@@ -1149,7 +1149,9 @@ from transformers import TextIteratorStreamer
 import hashlib
 import os
 
-model_path = snapshot_download("vikhyatk/moondream1")
+#model_path = snapshot_download("vikhyatk/moondream1")
+model_path = os.path.abspath("moondream1")
+print(f"model_path={model_path}")
 
 vision_encoder = VisionEncoder(model_path).to(DEVICE, dtype=DTYPE)
 text_model = TextModel(model_path).to(DEVICE, dtype=DTYPE)
