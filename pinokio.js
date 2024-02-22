@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: 1,
+  version: "1.1",
   title: "Moondream1",
   description: "moondream1 is a tiny (1.6B parameter) vision language model trained by @vikhyatk that performs on par with models twice its size. It is trained on the LLaVa training dataset, and initialized with SigLIP as the vision tower and Phi-1.5 as the text encoder. https://huggingface.co/spaces/vikhyatk/moondream1",
   icon: "icon.png",
